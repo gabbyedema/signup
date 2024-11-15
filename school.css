@@ -1,0 +1,114 @@
+/* General body styling */
+body {
+    background-color: #f0f0f0; /* Light grey for a neutral background */
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centering the overall container */
+.overall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Styling for the form container */
+.first {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Header styling */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+#clear {
+    background-color: #ff6666; /* Soft red */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#clear:hover {
+    background-color: #cc0000; /* Darker red for hover */
+}
+
+/* Input styling */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* Button styling */
+#btn {
+    background-color: #dd2929; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#btn:hover {
+    background-color: #b22222; /* Darker red */
+}
+
+/* Result display section */
+.second {
+    background-color: #dd2929; /* Red background */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .first, .second {
+        width: 100%; /* Full width on smaller screens */
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+    #btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
